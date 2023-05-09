@@ -1,4 +1,4 @@
-# Noroff Jobs TypeScript API Client: Introduction
+# Noroff Jobs TypeScript API Client
 
 Welcome to the **Noroff Jobs TypeScript API Client**, a Work In Progress (WIP) package developed for the student-run recruitment platform, Noroff Jobs. This project is maintained and developed by students as a part of the FEU Industry Knowledge course. The primary objective of this API client is to provide an intuitive and user-friendly interface for interacting with the Noroff Jobs API.
 
