@@ -3,7 +3,8 @@
 
 // Base API URL
 export const URL = "https://dummyjson.com/";
-
+//API token
+const token = ''
 
 /**
 Performs an API call.
@@ -16,9 +17,10 @@ Performs an API call.
  */
 
 
-export function apiCall (URL, method, body){
+export function apiCall (URL: string, method: string, body: object){
     //Methods allowed to use in this functions
     const methods = ["GET", "POST", "PUT", "DELETE"]
+    
 
      // If the method is invalid, throw an error
     if (!methods.includes(method)){
@@ -28,6 +30,7 @@ export function apiCall (URL, method, body){
     const request = {
         method:method,
         headers: {
+            ...(token ? { Authorization: `Bearer ${token}` } : {}),
             "content-type" : "application/json",
         },
         ...(body ? {body: JSON.stringify(body)} : {}),
