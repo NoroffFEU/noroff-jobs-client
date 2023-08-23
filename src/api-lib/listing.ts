@@ -1,4 +1,8 @@
 //Function to GET listings
 
 import { apiCall } from "./apiCall";
-export function listing() {}
+export async function listing() {
+  let response = await apiCall("", "", {});
+
+  return await response.json();
+}
